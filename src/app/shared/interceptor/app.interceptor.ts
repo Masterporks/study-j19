@@ -30,6 +30,7 @@ export class AppInterceptor implements HttpInterceptor {
       url: environment.baseURL + request.url
     });
 
+
     return next.handle(request);
   }
 }
